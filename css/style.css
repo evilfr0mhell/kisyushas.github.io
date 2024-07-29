@@ -120,3 +120,14 @@
     display: block;
     height: 250px;
 }
+@media (max-width: 600px) {
+    .conteiner {
+        width: 500px;
+    }
+    .message {
+        font-size: 32px;
+    }
+    .game {
+        width: 125px;
+    }
+}
