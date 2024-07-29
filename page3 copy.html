@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С днём рождения!!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <style type="text/css">
+        html, body{
+            font-family: Tiny5;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function checkPassword() {
+            let password = document.getElementById("passwordBox");
+            let passwordEntered = password.value;
+            if(passwordEntered === "Дракон") {
+                return true;
+            }
+            if(passwordEntered === "дракон") {
+                return true;
+            }
+            if(passwordEntered === "ДРАКОН") {
+                return true;
+            }
+            if(passwordEntered === "дРАКОН") {
+                return true;
+            }
+            
+            alert("Неправильно. Подсказка: ***кон");
+            return false;
+
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner">
+            <div class="message">
+                <h1>Кажется, здесь пароль</h1>
+
+            </div>
+            <div class="message">
+                <div class="pas">
+
+                    <h1>Чешуя есть, но не рыба.</h1>
+                    <h1>Огонь есть, но не печка.</h1>
+                    <h1>Летает, но не птица.</h1>
+                    <h1>Большой, но не динозавр.</h1>
+                    <h1>Кто это?</h1>
+                    <input type="password" id="passwordBox" name="password" class="passb"/>
+                </div>
+
+    
+            </div>
+            <div class="button">
+                <a href="./index copy.html" onclick="return checkPassword();">
+                    <h1>Ответить</h1>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+</body>
+</html>
